@@ -11,8 +11,11 @@ def get_datetime(file):
         print(f"Error retrieving modification date: {e}")
         return None
 
-file_name = input("Enter the file name: ")
-modification_date = get_datetime(file_name)
+def give_datetime(file):
+    file_name = input("Enter the file name: ")
+    modification_date = get_datetime(file_name)
 
-if modification_date is not None:
-    print(modification_date)
+    if modification_date is not None:
+        print(modification_date)
+
+give_datetime("C:\\Users\\User\\Desktop\\test.txt")
